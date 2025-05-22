@@ -1,0 +1,20 @@
+# Core
+streamlit
+pandas
+requests
+
+# For Excel export
+xlsxwriter
+openpyxl
+
+# Playwright-based scraper
+playwright
+playwright-stealth
+
+# Selenium-based scraper
+selenium
+undetected-chromedriver
+
+# HTML parsing
+beautifulsoup4
+lxml
