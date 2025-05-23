@@ -104,7 +104,7 @@ def fetch_page_results(context, url):
 def scrape_google_advanced(params: dict, pause: float = 0.5, max_pages: int = DEFAULT_MAX_PAGES):
     all_results = []
     playwright, browser, context = setup_browser(
-        proxy=None
+        proxy=random.choice(PROXIES) if PROXIES else None,
         user_agent=random.choice(USER_AGENTS) if USER_AGENTS else None
     )
     try:
