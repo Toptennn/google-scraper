@@ -44,7 +44,7 @@ DEFAULT_MAX_PAGES = 100
 # --------------------------------
 def setup_browser(proxy=None, user_agent=None):
     playwright = sync_playwright().start()
-    launch_args = {"headless": False, "slow_mo": 50}
+    launch_args = {"headless": True}
     if proxy:
         launch_args["proxy"] = {"server": proxy}
     browser = playwright.chromium.launch(**launch_args)
